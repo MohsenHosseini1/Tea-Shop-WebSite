@@ -81,16 +81,16 @@ header{
     width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333%;
     grid-template-rows: 50rem 17rem auto auto auto auto auto auto;
-    grid-template-areas: "title-img title-img title-img title-img"
-                         "product-element-1 product-element-2 product-element-3 product-element-4"
-                         "tea-photo tea-photo tea-about tea-about"
-                         "inventory-text product-element-5 product-element-6 product-element-7"
-                         "explore-title explore-title explore-title explore-title"
-                         "product-cart-1 product-cart-2 product-cart-3 product-cart-4"
-                         "contact-text contact-text contact-input contact-input"
-                         "footer footer footer footer";
+    grid-template-areas: "title-img title-img title-img title-img title-img title-img title-img title-img title-img title-img title-img title-img"
+                         "product-element-1 product-element-1 product-element-1 product-element-2 product-element-2 product-element-2 product-element-3 product-element-3 product-element-3 product-element-4 product-element-4 product-element-4"
+                         "tea-photo tea-photo tea-photo tea-photo tea-photo tea-photo tea-about tea-about tea-about tea-about tea-about tea-about"
+                         "inventory-text inventory-text inventory-text product-element-5 product-element-5 product-element-5 product-element-6 product-element-6 product-element-6 product-element-7 product-element-7 product-element-7"
+                         "explore-title explore-title explore-title explore-title explore-title explore-title explore-title explore-title explore-title explore-title explore-title explore-title"
+                         "product-cart-1 product-cart-1 product-cart-1 product-cart-1 product-cart-2 product-cart-2 product-cart-2 product-cart-2 product-cart-3 product-cart-3 product-cart-3 product-cart-3"
+                         "contact-text contact-text contact-text contact-text contact-text contact-text contact-input contact-input contact-input contact-input contact-input contact-input"
+                         "footer footer footer footer footer footer footer footer footer footer footer footer";
 }
 .title-img{
     grid-area: title-img;
@@ -201,6 +201,7 @@ h4{
 }
 .inventory-text{
     grid-area: inventory-text;
+    background-color: #F1F5F7;
 }
 .inventory-text-box{
     padding: 10%;
@@ -215,6 +216,15 @@ h4{
 }
 .product-element-5{
     grid-area: product-element-5;
+    background-color: #F1F5F7;
+}
+.product-element-6{
+    grid-area: product-element-6;
+    background-color: #F1F5F7;
+}
+.product-element-7{
+    grid-area: product-element-7;
+    background-color: #F1F5F7;
 }
 .cart{
     padding: 6%;
@@ -232,12 +242,112 @@ h4{
 .cart h6{
     font-size: .8rem;
     letter-spacing: .2rem;
+    color: #6b8c3e;
 }
-.product-element-6{
-    grid-area: product-element-6;
+.explore-title{
+    grid-area: explore-title;
+    text-align: center;
 }
-.product-element-7{
-    grid-area: product-element-7;
+.explore-title h2{
+    font-size: 2.5rem;
+}
+.explore-title h4{
+    font-size: 3rem;
+    letter-spacing: .1rem;
+}
+.product-cart-1{
+    grid-area: product-cart-1;
+}
+.product-cart-2{
+    grid-area: product-cart-2;
+}
+.product-cart-3{
+    grid-area: product-cart-3;
+}
+.cart-container{
+    margin: 10%;
+    background-color: #F1F5F7;
+    border-radius: 2.5%;
+}
+.cart-container img{
+    width: 100%;
+    border-radius: 2.5% 2.5% 0 0;
+}
+.cart-bd{
+    padding: 6%;
+}
+.cart-bd p{
+    margin-bottom: 3%;
+}
+.contact-text{
+    grid-area: contact-text;
+    background-color: #F1F5F7;
+}
+.contact-input{
+    grid-area: contact-input;
+    padding: 15%;
+    background-color: #F1F5F7;
+}
+.contact-text-box{
+    padding: 15% 15% 0 15%;
+    letter-spacing: .2rem;
+    line-height: 1.5;
+}
+.contact-text-box h6{
+    font-size: 1rem;
+    color: #6b8c3e;
+}
+.input-box{
+    background-color: #ffffff;
+    border-radius: 2.5%;
+}
+.input-box h6{
+    font-size: 1.8rem;
+    text-align: center;
+    color: #627790;
+    padding: 2% 0 0 0;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50%;
+    border-radius: 1%;
+    margin: 3%;
+
+}
+.input-container input{
+    padding: 2%;
+    margin: 1%;
+
+}
+.big-input input{
+    padding: 10%;
+    width: 98%;
+}
+.input-button{
+    text-align: center;
+    color: white;
+    background-color: #6A8445;
+    border-radius: 0 0 3% 3%;
+    padding: 1.5%;
+    margin-top: 8%;
+}
+.footer{
+    grid-area: footer;
+    background-color: #222222;
+}
+.footer-box{
+    padding:2%;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.footer-box i{
+    margin: 1%;
+}
+.footer-box span{
+    color: #6b8c3e;
 }
 @media only screen and (max-width: 600px) {
 
