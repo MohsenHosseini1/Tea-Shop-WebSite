@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none !important;
+    font-family: "Open Sans", sans-serif;
+}
+body{
+    height: calc(100vh - 5px);
+}
+header{
+    width: 100%;
+    position: relative;
+}
+.header>div{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    background: #000000;
+}
+.playwrite-gb-s{
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo{
+    width: 30%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.open-sans{
+                font-family: "Open Sans", sans-serif;
+                font-optical-sizing: auto;
+                font-weight:600;
+                font-style: normal;
+                font-variation-settings:
+                        "wdth" 100;
+            }
+.menu-icon-container>label>i{
+    color: rgba(76, 122, 40, 0.78);
+    font-size: 50px;
+    position: fixed;
+}
+.aside{
+    width: 20%;
+    height: 50rem;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all 300ms linear;
+    padding: 1%;
+}
+#open-menu:checked~.aside{
+    transform: translateX(0);
+}
+.input{
+    display: none;
+}
+.fa-align-justify{
+    margin: 2%;
+}
+.close-menu{
+    width: 90%;
+    font-size: 2rem;
+    color: #ff5757;
+    position: fixed;
+    text-align: end;
+    z-index: 999;
+
+}
+.container{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50rem 17rem auto auto auto auto auto auto;
+    grid-template-areas: "title-img title-img title-img title-img"
+                         "product-element-1 product-element-2 product-element-3 product-element-4"
+                         "tea-photo tea-photo tea-about tea-about"
+                         "inventory-text product-element-5 product-element-6 product-element-7"
+                         "explore-title explore-title explore-title explore-title"
+                         "product-cart-1 product-cart-2 product-cart-3 product-cart-4"
+                         "contact-text contact-text contact-input contact-input"
+                         "footer footer footer footer";
+}
+.title-img{
+    grid-area: title-img;
+    background-image: url("./images/main-bcg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.title-box{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.49);
+    text-align: center;
+    padding: 17%;
+    border-bottom:8px solid #fcff96;
+}
+h2{
+    font-family: "Playwrite GB S", cursive;
+    color: #6A8445;
+}
+h1{
+    font-size: 4rem;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 2%;
+}
+.button-container{
+    display: flex;
+}
+.top-button{
+    padding: .5%;
+    width: 25%;
+    border: 3px solid #C4E493 ;
+    margin: 0 auto;
+}
+.box-top-button{
+    background-color: #C4E493 ;
+    padding: 2% 1% 2% 1%;
+    color: #698440;
+}
+.product-element-1{
+    grid-area: product-element-1;
+    background-color: #F1F5F7;
+}
+.product-element-2{
+    grid-area: product-element-2;
+    background-color: #F1F5F7;
+}
+.product-element-3{
+    grid-area: product-element-3;
+    background-color: #F1F5F7;
+}
+.product-element-4{
+    grid-area: product-element-4;
+    background-color: #F1F5F7;
+}
+.product-content{
+    padding: 4%;
+    text-align: center;
+    line-height: 1.5;
+}
+.product-content i{
+    font-size: 3rem;
+    padding-top: 5%;
+    margin-bottom: 5%;
+    color: #6b8c3e;
+}
+.tea-photo{
+    grid-area: tea-photo;
+    padding: 13%;
+}
+.tea-photo-box{
+    border: 7px solid #7a9355;
+}
+.tea-photo-box img{
+    width: 100%;
+    height: 100%;
+}
+.tea-about{
+    grid-area: tea-about;
+}
+.tea-about-box{
+    padding: 13% 13% 13% 0;
+}
+h2{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.5rem;
+}
+.tea-about-box p{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-bottom: 7%;
+
+}
+.about-button-box{
+    display: flex;
+    width: 100%;
+}
+.about-button{
+    margin: 0 auto;
+    background-color: #6A8445;
+    color: white;
+    font-size: 1rem;
+    padding: 2%;
+    letter-spacing: .2rem;
+}
+.inventory-text{
+    grid-area: inventory-text;
+}
+.inventory-text-box{
+    padding: 10%;
+}
+.inventory-text-box h2 {
+    font-size: 2.2rem;
+}
+.inventory-text-box p{
+    line-height: 1.5rem;
+    margin-bottom: 7%;
+
+}
+.product-element-5{
+    grid-area: product-element-5;
+}
+.cart{
+    padding: 6%;
+}
+.cart img{
+    width: 100%;
+    border-radius: 3%;
+    margin-bottom: 3%;
+}
+.cart h5{
+    font-size: 1.2rem;
+    margin-bottom: 3%;
+    letter-spacing: .2rem;
+}
+.cart h6{
+    font-size: .8rem;
+    letter-spacing: .2rem;
+}
+.product-element-6{
+    grid-area: product-element-6;
+}
+.product-element-7{
+    grid-area: product-element-7;
+}
+@media only screen and (max-width: 600px) {
+
+}
+
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
