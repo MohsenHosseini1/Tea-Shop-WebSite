@@ -82,15 +82,6 @@ header{
     height: auto;
     display: grid;
     grid-template-columns: 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333%;
-    grid-template-rows: 50rem 17rem auto auto auto auto auto auto;
-    grid-template-areas: "title-img title-img title-img title-img title-img title-img title-img title-img title-img title-img title-img title-img"
-                         "product-element-1 product-element-1 product-element-1 product-element-2 product-element-2 product-element-2 product-element-3 product-element-3 product-element-3 product-element-4 product-element-4 product-element-4"
-                         "tea-photo tea-photo tea-photo tea-photo tea-photo tea-photo tea-about tea-about tea-about tea-about tea-about tea-about"
-                         "inventory-text inventory-text inventory-text product-element-5 product-element-5 product-element-5 product-element-6 product-element-6 product-element-6 product-element-7 product-element-7 product-element-7"
-                         "explore-title explore-title explore-title explore-title explore-title explore-title explore-title explore-title explore-title explore-title explore-title explore-title"
-                         "product-cart-1 product-cart-1 product-cart-1 product-cart-1 product-cart-2 product-cart-2 product-cart-2 product-cart-2 product-cart-3 product-cart-3 product-cart-3 product-cart-3"
-                         "contact-text contact-text contact-text contact-text contact-text contact-text contact-input contact-input contact-input contact-input contact-input contact-input"
-                         "footer footer footer footer footer footer footer footer footer footer footer footer";
 }
 .title-img{
     grid-area: title-img;
@@ -349,22 +340,82 @@ h4{
 .footer-box span{
     color: #6b8c3e;
 }
-@media only screen and (max-width: 600px) {
-
+/* استایل‌های پایه */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none !important;
+    font-family: "Open Sans", sans-serif;
 }
 
-@media only screen and (min-width: 600px) {
-
+/* Small devices*/
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .container {
+        grid-template-rows: 50rem 17rem auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-areas:
+            "title-img title-img title-img title-img title-img title-img title-img title-img title-img title-img title-img title-img"
+            "product-element-1 product-element-1 product-element-1 product-element-1 product-element-1 product-element-1 product-element-1 product-element-1 product-element-1 product-element-1 product-element-1 product-element-1"
+            "product-element-2 product-element-2 product-element-2 product-element-2 product-element-2 product-element-2 product-element-2 product-element-2 product-element-2 product-element-2 product-element-2 product-element-2"
+            "product-element-3 product-element-3 product-element-3 product-element-3 product-element-3 product-element-3 product-element-3 product-element-3 product-element-3 product-element-3 product-element-3 product-element-3"
+            "product-element-4 product-element-4 product-element-4 product-element-4 product-element-4 product-element-4 product-element-4 product-element-4 product-element-4 product-element-4 product-element-4 product-element-4"
+            "tea-photo tea-photo tea-photo tea-photo tea-photo tea-photo tea-photo tea-photo tea-photo tea-photo tea-photo tea-photo"
+            "tea-about tea-about tea-about tea-about tea-about tea-about tea-about tea-about tea-about tea-about tea-about tea-about"
+            "product-element-5 product-element-5 product-element-5 product-element-5 product-element-5 product-element-5 product-element-5 product-element-5 product-element-5 product-element-5 product-element-5 product-element-5"
+            "product-element-6 product-element-6 product-element-6 product-element-6 product-element-6 product-element-6 product-element-6 product-element-6 product-element-6 product-element-6 product-element-6 product-element-6"
+            "inventory-text inventory-text inventory-text inventory-text inventory-text inventory-text inventory-text inventory-text inventory-text inventory-text inventory-text inventory-text"
+            "product-element-7 product-element-7 product-element-7 product-element-7 product-element-7 product-element-7 product-element-7 product-element-7 product-element-7 product-element-7 product-element-7 product-element-7"
+            "product-cart-1 product-cart-1 product-cart-1 product-cart-1 product-cart-1 product-cart-1 product-cart-1 product-cart-1 product-cart-1 product-cart-1 product-cart-1 product-cart-1"
+            "explore-title explore-title explore-title explore-title explore-title explore-title explore-title explore-title explore-title explore-title explore-title explore-title"
+            "product-cart-2 product-cart-2 product-cart-2 product-cart-2 product-cart-2 product-cart-2 product-cart-2 product-cart-2 product-cart-2 product-cart-2 product-cart-2 product-cart-2"
+            "product-cart-3 product-cart-3 product-cart-3 product-cart-3 product-cart-3 product-cart-3 product-cart-3 product-cart-3 product-cart-3 product-cart-3 product-cart-3 product-cart-3"
+            "contact-text contact-text contact-text contact-text contact-text contact-text contact-text contact-text contact-text contact-text contact-text contact-text"
+            "contact-input contact-input contact-input contact-input contact-input contact-input contact-input contact-input contact-input contact-input contact-input contact-input"
+            "footer footer footer footer footer footer footer footer footer footer footer footer";
+    }
 }
 
-@media only screen and (min-width: 768px) {
-
+/* Medium devices */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .container {
+        grid-template-rows: 50rem 17rem auto auto auto auto auto auto auto auto auto;
+        grid-template-areas:
+            "title-img title-img title-img title-img title-img title-img title-img title-img title-img title-img title-img title-img"
+            "product-element-1 product-element-1 product-element-1 product-element-1 product-element-1 product-element-1 product-element-2 product-element-2 product-element-2 product-element-2 product-element-2 product-element-2"
+            "product-element-3 product-element-3 product-element-3 product-element-3 product-element-3 product-element-3 product-element-4 product-element-4 product-element-4 product-element-4 product-element-4 product-element-4"
+            "tea-photo tea-photo tea-photo tea-photo tea-photo tea-photo tea-photo tea-photo tea-photo tea-photo tea-photo tea-photo"
+            "tea-about tea-about tea-about tea-about tea-about tea-about tea-about tea-about tea-about tea-about tea-about tea-about"
+            "product-element-5 product-element-5 product-element-5 product-element-5 product-element-5 product-element-5 product-element-6 product-element-6 product-element-6 product-element-6 product-element-6 product-element-6"
+            "inventory-text inventory-text inventory-text inventory-text inventory-text inventory-text product-element-7 product-element-7 product-element-7 product-element-7 product-element-7 product-element-7"
+            "product-cart-1 product-cart-1 product-cart-1 product-cart-1 product-cart-1 product-cart-1 explore-title explore-title explore-title explore-title explore-title explore-title"
+            "product-cart-2 product-cart-2 product-cart-2 product-cart-2 product-cart-2 product-cart-2 product-cart-3 product-cart-3 product-cart-3 product-cart-3 product-cart-3 product-cart-3"
+            "contact-text contact-text contact-text contact-text contact-text contact-text contact-input contact-input contact-input contact-input contact-input contact-input"
+            "footer footer footer footer footer footer footer footer footer footer footer footer";
+    }
+    .tea-about-box {
+        padding: 6%;
+        text-align: center;
+    }
+    .explore-title {
+        padding-top: 50%;
+    }
+    .contact-text-box i {
+        margin: 2%;
+    }
 }
 
+/* Large devices */
 @media only screen and (min-width: 992px) {
-
-}
-
-@media only screen and (min-width: 1200px) {
-
+    .container{
+        grid-template-rows: 50rem 17rem auto auto auto auto auto auto;
+        grid-template-areas: "title-img title-img title-img title-img title-img title-img title-img title-img title-img title-img title-img title-img"
+                         "product-element-1 product-element-1 product-element-1 product-element-2 product-element-2 product-element-2 product-element-3 product-element-3 product-element-3 product-element-4 product-element-4 product-element-4"
+                         "tea-photo tea-photo tea-photo tea-photo tea-photo tea-photo tea-about tea-about tea-about tea-about tea-about tea-about"
+                         "inventory-text inventory-text inventory-text product-element-5 product-element-5 product-element-5 product-element-6 product-element-6 product-element-6 product-element-7 product-element-7 product-element-7"
+                         "explore-title explore-title explore-title explore-title explore-title explore-title explore-title explore-title explore-title explore-title explore-title explore-title"
+                         "product-cart-1 product-cart-1 product-cart-1 product-cart-1 product-cart-2 product-cart-2 product-cart-2 product-cart-2 product-cart-3 product-cart-3 product-cart-3 product-cart-3"
+                         "contact-text contact-text contact-text contact-text contact-text contact-text contact-input contact-input contact-input contact-input contact-input contact-input"
+                         "footer footer footer footer footer footer footer footer footer footer footer footer";
+    }
 }
